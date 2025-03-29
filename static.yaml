@@ -6,6 +6,6 @@
   tasks:
   - name: Update static page
     copy:
-       src: hold file.html
-       dest: /var/www/html/hold file.html
+       src: static.html
+       dest: /var/www/html/static.html
 ...
