@@ -1,0 +1,13 @@
+---
+
+tasks:
+  - name: Update static page
+    copy:
+       src: static.html
+       dest: /var/www/html/static.html
+
+  - name: Update Dynamic page
+    template:
+       src: dynamic.jinja2
+       dest: /var/www/html/dynamic.html
+...
