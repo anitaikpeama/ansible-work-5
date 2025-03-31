@@ -1,0 +1,10 @@
+- name: static page
+  hosts: g1
+  become: yes
+
+  tasks:
+  - name: Update static page
+    template:
+       src: dynamic.jinja2
+       dest: /var/www/html/dynamic.html
+...
