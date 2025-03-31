@@ -1,4 +1,4 @@
-- name: static page
+ name: static page
   hosts: g1
   become: yes
 
