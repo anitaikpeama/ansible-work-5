@@ -1,6 +1,4 @@
 ---
-
-tasks:
   - name: Update static page
     copy:
        src: static.html
