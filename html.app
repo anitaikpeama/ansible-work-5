@@ -4,8 +4,8 @@
   become: yes
 
   roles:
-  -  apache
-  -  html
+   -  apache
+   -  html
 
       
 ...

@@ -1,6 +1,6 @@
 ---
 # tasks file for apache
 
--import tasks: downloads.yaml
--import tasks: layout.yaml
+- import_tasks: downloads.yaml
+- import_tasks: layout.yaml
    
