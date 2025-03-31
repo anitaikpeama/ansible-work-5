@@ -1,11 +1,13 @@
- name: num page
- hosts: g1
- become: yes
- vars:
-   myusername: Anita
- tasks:
+---
+- name: num Page
+  hosts: g1
+  become: yes
+  vars:
+    myusername: Anita
 
-  - name: Update dynamic page
-    template:
-       src: dynamic.jinja2
-       dest: /var/www/html/dynamic.html
+  tasks:
+    - name: Update Unique Page
+      template:
+        src: dynamic.jinja2
+        dest: /var/www/html/dynamic.html
+        ...
