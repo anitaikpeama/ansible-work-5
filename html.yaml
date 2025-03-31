@@ -1,10 +1,11 @@
 ---
-- name: Ensure Apache is installed
-  yum:
-    name: httpd
-    state: present
+- name: Deploy Web App
+  hosts: n3
+  become: yes
 
-- name: Start Apache service
-  service:
-    name: httpd
-    state: started
+  roles:
+   -  apache
+   -  html
+
+      
+...
