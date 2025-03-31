@@ -1,8 +1,8 @@
  name: static page
-  hosts: g1
-  become: yes
-
-  tasks:
+ hosts: g1
+ become: yes
+ 
+ tasks:
   - name: Update static page
     template:
        src: dynamic.jinja2

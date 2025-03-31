@@ -1,0 +1,10 @@
+ name: static page
+ hosts: g1
+ become: yes
+ vars:
+   myusername: Anita
+ tasks:
+  - name: Update dynamic page
+    template:
+       src: dynamic.jinja2
+       dest: /var/www/html/dynamic.html
